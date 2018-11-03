@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <script> type="text/javascript"
+    var color = '#f90909cc';
+    function change1(identifier) {
+        identifier.style.background = color;
+        document.getElementById('col2').style.cssText = 'background-color: #673e30';
+        document.getElementById('col3').style.cssText = 'background-color: #673e30';
+        document.getElementById('col4').style.cssText = 'background-color: #673e30';
+
+    }
+    function change2(identifier) {
+        identifier.style.background = color;
+        document.getElementById('col1').style.cssText = 'background-color: #673e30';
+        document.getElementById('col3').style.cssText = 'background-color: #673e30';
+        document.getElementById('col4').style.cssText = 'background-color: #673e30';
+    }
+    function change3(identifier) {
+        identifier.style.background = color;
+        document.getElementById('col2').style.cssText = 'background-color: #673e30';
+        document.getElementById('col1').style.cssText = 'background-color: #673e30';
+        document.getElementById('col4').style.cssText = 'background-color: #673e30';
+    }
+    function change4(identifier) {
+        identifier.style.background = color;
+        document.getElementById('col2').style.cssText = 'background-color: #673e30';
+        document.getElementById('col3').style.cssText = 'background-color: #673e30';
+        document.getElementById('col1').style.cssText = 'background-color: #673e30';
+    }
+    </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -92,22 +122,149 @@
         </div>
     </div>
     <div class="secondText">
-        <div class="size">
-
+        <div class="size flex">
+            <div class="secondText__text">Распродажа инструментов</div>
         </div>
     </div>
     <nav class="kindItem">
-        <div class="size">
-            <div>
-
-            </div>
+        <div class="size flex">
+            <ul class="kindItem__menu">
+                <li id="col1" onclick="change1(this)">Инструменты</li>
+                <li id="col2" onclick="change2(this)">Свет</li>
+                <li id="col3" onclick="change3(this)">Звук</li>
+                <li id="col4" onclick="change4(this)">Уценка</li>
+            </ul>
         </div>
     </nav>
     <div class="galleryItem">
-        <div class="size">
-
+        <div class="size flex-gallery">
+            <div class="galleryItem__box">
+                <div class="galleryItem__box__img flex">
+                    <img src="./img/music_items/Layer_81.png" alt="img">
+                </div>
+                <div class="galleryItem__box__text flex">
+                    <h3 class="firstText__text">Hohner Bravo III 96 RED</h3>
+                    <p>Аккардеон, в стиле "Юнион Джек". Выпущен ограниченным тиражом.</p>
+                    <p><span class="galleryItem__box__text-cross">89 750</span>
+                        <span class="galleryItem__box__text-discountRed">83 550 ₽</span>
+                    </p>
+                </div>
+                <div class="galleryItem__box__menu">
+                    <div class="galleryItem__box__menu__img">
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/купить_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/сравнение_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/избранное_copy_6.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="galleryItem__box">
+                <div class="galleryItem__box__img flex">
+                    <img src="./img/music_items/Layer_45_copy.png" alt="img">
+                </div>
+                <div class="galleryItem__box__text flex">
+                    <h3 class="firstText__text">DBZ Halilfire</h3>
+                    <p>Электрогитара, в стиле
+                        «Юнион Джек». Выпущена ограниченным тиражом.</p>
+                    <p><span class="galleryItem__box__text-cross">89 750</span>
+                        <span class="galleryItem__box__text-discountRed">83 550 ₽</span>
+                    </p>
+                </div>
+                <div class="galleryItem__box__menu">
+                    <div class="galleryItem__box__menu__img">
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/купить_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/сравнение_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/избранное_copy_6.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="galleryItem__box">
+                <div class="galleryItem__box__img flex">
+                    <img src="./img/music_items/Layer_81_copy.png" alt="img">
+                </div>
+                <div class="galleryItem__box__text flex">
+                    <h3 class="firstText__text">Pearl Sparkle Burst</h3>
+                    <p>Малый барабан MCX Masters Custom 14x5.5 (клен)</p>
+                    <p><span class="galleryItem__box__text-cross">89 750</span>
+                        <span class="galleryItem__box__text-discountRed">83 550 ₽</span>
+                    </p>
+                </div>
+                <div class="galleryItem__box__menu">
+                    <div class="galleryItem__box__menu__img">
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/купить_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/сравнение_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/избранное_copy_6.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="galleryItem__box">
+                <div class="galleryItem__box__img flex">
+                    <img src="./img/music_items/Layer_45_copy_5.png" alt="img">
+                </div>
+                <div class="galleryItem__box__text flex">
+                    <h3 class="firstText__text">Yamaha P-105B</h3>
+                    <p>Компактное электропиано, оснащенное стерео- сэмплированными тембрами!</p>
+                    <p><span class="galleryItem__box__text-cross">89 750</span>
+                        <span class="galleryItem__box__text-discountRed">83 550 ₽</span>
+                    </p>
+                </div>
+                <div class="galleryItem__box__menu">
+                    <div class="galleryItem__box__menu__img">
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/купить_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/сравнение_copy_6.png" alt="img">
+                        </div>
+                        <div class="galleryItem__box__menu__img-wrrp">
+                            <img src="./img/music_items/избранное_copy_6.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+    </div>
+    <div class="thirdText">
+        <div class="size flex-gallery">
+            <div class="thirdText__box">
+                <div class="firstText__text">ВСЕ ПРЕДЛОЖЕНИЯ</div>
+                <div class="firstText__text">ПОДПИСАТЬСЯ НА РАСПРОДАЖИ</div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="size flex">
+            <div class="services__boxes">
+                <div class="services__box">
+                    <div class="services__box__img">
+                        <img src="./img/services/Group_4.png" alt="img">
+                        <h3>Доставка до дверей</h3>
+                    </div>
+                </div>
+                <div class="services__box"></div>
+                <div class="services__box"></div>
+                <div class="services__box"></div>
+                <div class="services__box"></div>
+                <div class="services__box"></div>
+            </div>
+        </div>
     </div>
 
 

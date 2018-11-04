@@ -22,7 +22,7 @@ body{
     margin: 0 auto;
     overflow: hidden;
     height: inherit;
-    box-shadow: 0 2px 1px black;
+    /* box-shadow: 0 2px 1px black; */
 }
 .header__head{
     height: 50px;
@@ -483,7 +483,7 @@ body{
     width: 126px;
     height: 53px;
     position: relative;
-    margin: 60px auto auto;
+    margin: 20px auto auto;
 }
 .services__head h2{
     width: 129px;

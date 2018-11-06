@@ -1,4 +1,4 @@
-/*var color = 'rgba(249, 9, 9, 0.65)';
+var color = 'rgba(249, 9, 9, 0.65)';
 
 function change1(identifier) {
     identifier.style.background = color;
@@ -23,33 +23,33 @@ function change4(identifier) {
     document.getElementById('col2').style.cssText = 'background-color: #673e30';
     document.getElementById('col3').style.cssText = 'background-color: #673e30';
     document.getElementById('col1').style.cssText = 'background-color: #673e30';
-}*/
+}
 
-/*<script>
+
 var slideNow = 1;
 var slideCount = $('#slidewrapper').children().length;
 var slideInterval = 3000;
 var navBtnId = 0;
 var translateWidth = 0;
 
-$(document).ready(function() {
+$(document).ready(function () {
     var switchInterval = setInterval(nextSlide, slideInterval);
 
-    $('#viewport').hover(function() {
+    $('#viewport').hover(function () {
         clearInterval(switchInterval);
-    }, function() {
+    }, function () {
         switchInterval = setInterval(nextSlide, slideInterval);
     });
 
-    $('#next-btn').click(function() {
+    $('#next-btn').click(function () {
         nextSlide();
     });
 
-    $('#prev-btn').click(function() {
+    $('#prev-btn').click(function () {
         prevSlide();
     });
 
-    $('.slide-nav-btn').click(function() {
+    $('.slide-nav-btn').click(function () {
         navBtnId = $(this).index();
 
         if (navBtnId + 1 != slideNow) {
@@ -80,21 +80,38 @@ function nextSlide() {
         });
         slideNow++;
     }
-    if (slideNow == 1){
+    if (slideNow == 1) {
         $('#first-nav-btn').css({
-            'background-color': 'red',
+            'background-color': '#f90909cc',
         });
         $('#second-nav-btn').css({
             'background-color': '#fff'
-        })
+        });
+        $('#third-nav-btn').css({
+            'background-color': '#fff'
+        });
     }
-    if (slideNow == 2){
+    if (slideNow == 2) {
         $('#first-nav-btn').css({
             'background-color': '#fff',
         });
         $('#second-nav-btn').css({
-            'background-color': 'red'
-        })
+            'background-color': '#f90909cc'
+        });
+        $('#third-nav-btn').css({
+            'background-color': '#fff'
+        });
+    }
+    if (slideNow == 3) {
+        $('#first-nav-btn').css({
+            'background-color': '#fff',
+        });
+        $('#second-nav-btn').css({
+            'background-color': '#fff'
+        });
+        $('#third-nav-btn').css({
+            'background-color': '#f90909cc'
+        });
     }
 }
 
@@ -119,4 +136,4 @@ function prevSlide() {
 
 }
 
-</script>*/
+
